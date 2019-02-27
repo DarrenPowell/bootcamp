@@ -4,7 +4,8 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <style>
@@ -25,6 +26,7 @@
  
 
 <nav class="navbar navbar-inverse">
+  
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -32,105 +34,134 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Portfolio</a>
+      <a class="navbar-brand" href="/">#</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/#darren">Me</a></li>
+        <li><a href="/#work">Work</a></li>
+        <li><a href="/#git">Git</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
+      <!-- <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
+      </ul> -->
     </div>
   </div>
 </nav>
 
-<div class="jumbotron">
+<div class="container-fluid main-image">
+    
+</div>  
+<div class="jumbotron custom-jumbotron" id="darren">
   <div class="container text-center">
     <h1>Darren Powell</h1>      
     <p>Some text that represents "Me"...</p>
+    <p>Uh...Maybe checkout my <a href="https://github.com/DarrenPowell" target="_blank">repo</a></p>
   </div>
 </div>
   
 <div class="container-fluid bg-3 text-center">    
-  <h3>Some of my Work</h3><br>
+  
   <div class="row">
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    <div class="col-sm-12">
+      <hr id="work">
+      <h3>Some of my Work</h3>
+      <hr>
     </div>
   </div>
-</div><br>
-
-<div class="container-fluid bg-3 text-center">    
   <div class="row">
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    <div class="col-sm-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Color Game</h3>
+        </div>
+        <div class="panel-body">
+          <img src="img/port/color-game.png" class="img-responsive" style="width:100%" alt="Image">
+          <hr>
+          <p>A game that gives you the code for a color and you have to guess what it is</p>
+          
+          <a class="btn btn-md btn-primary" href="/portfolio/color-game/">VIEW</a>
+        </div>
+      </div>  
     </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    <div class="col-sm-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Photo Blog</h3>
+        </div>
+        <div class="panel-body">
+          <img src="/img/port/photo-blog.png" class="img-responsive" style="width:100%" alt="Image">
+          <hr>
+          <p>Some of my favourite black and white photos</p>
+          
+          <a class="btn btn-md btn-primary" href="/portfolio/photo-blog">VIEW</a>
+        </div>
+      </div>  
     </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <link rel="stylesheet" type="text/css" href="wwww.facebook.com">
+    <div class="col-sm-4">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Pig Game</h3>
+        </div>
+        <div class="panel-body">
+          <img src="/img/port/pig-game.png" class="img-responsive" style="width:100%" alt="Image">
+          <hr>
+          <p>We will figure this one out</p>
+          
+          <a class="btn btn-md btn-primary" href="/portfolio/pig-game">VIEW</a>
+        </div>
+      </div>  
     </div>
   </div>
-</div><br><br>
+</div>
 
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
+<div class="container-fluid" id="git">
+  <div class="row">
+    <div class="col-sm-12">
+      <hr>
+      <h3 style="text-align: center;">Git</h3>
+      <hr>
+
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Assignment</th>
+            <th scope="col">Github Repository</th>
+            <th scope="col">Date Completed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">11-15 Feb</th>
+            <td>Soccer Application</td>
+            <td><a class="btn btn-sm btn-success" href="https://github.com/DarrenPowell/using-inheritance" target="_blank">REPO</a></td>
+            <td>15-02-2019</td>
+          </tr>
+          <tr>
+            <th scope="row">18-23 Feb</th>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th scope="row">18-23 Feb</th>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>
+
+
 
 <footer class="container-fluid text-center">
-  <p>Footer Text</p>
+  <p>Darren Powell</p>
 </footer>
 
 </body>
