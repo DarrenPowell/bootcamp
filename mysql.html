@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/introprograms/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/introprograms/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to  footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+<body>
+ 
+
+<nav class="navbar navbar-inverse">
+  
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="/">#</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Home</a></li>
+        <li><a href="/#darren">Me</a></li>
+        <li><a href="/#work">Work</a></li>
+        <li><a href="/#git">Git</a></li>
+      </ul>
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul> -->
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>How I used MySql</h1>
+        <hr>
+        <div class="panel panel-default">
+          <div class="panel-heading"><b>Select Statement</b></div>
+          <div class="panel-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            <div class="well">
+              SELECT * <br/>
+              FROM mydb.profession;
+            </div>
+            <div class="well">
+              SELECT * <br/>
+              FROM mydb.profession <br/>
+              WHERE profession = 'Manager';<br/>
+            </div>
+            <div class="well">
+              SELECT prof_id AS ID  <br/>
+              FROM mydb.profession <br/>
+              WHERE profession = 'Manager' AND prof_id = 6;
+            </div>
+          </div>
+        </div>
+        
+        <hr>
+        <!-- Code Panel Block start -->
+        <div class="panel panel-default">
+          <div class="panel-heading"><b>Select Statement</b></div>
+          <div class="panel-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            <div class="well">
+              SELECT * FROM mydb.profession;
+            </div>
+            <div class="well">
+              SELECT * FROM mydb.my_contacts;
+            </div>
+            <div class="well">
+              SELECT * FROM mydb.status;
+            </div>
+          </div>
+        </div>
+        <!-- Code Panel Block end -->
+    </div>
+  </div>
+</div>
