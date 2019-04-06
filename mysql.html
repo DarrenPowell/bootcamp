@@ -39,9 +39,9 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="/">Home</a></li>
-        <li><a href="/#darren">Me</a></li>
-        <li><a href="/#work">Work</a></li>
-        <li><a href="/#git">Git</a></li>
+        <li><a href="/introprograms/#darren">Me</a></li>
+        <li><a href="/introprograms/#work">Work</a></li>
+        <li><a href="/introprograms/#git">Git</a></li>
       </ul>
       <!-- <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -59,12 +59,9 @@
         <div class="panel panel-default">
           <div class="panel-heading"><b>Select Statement</b></div>
           <div class="panel-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-            <div class="well">
-              SELECT * <br/>
-              FROM mydb.profession;
-            </div>
+            <p>The SELECT statement is used to select data from a database. The data returned is stored in a result table, called the result-set.
+ 			</p>
+            
             <div class="well">
               SELECT * <br/>
               FROM mydb.profession <br/>
@@ -81,22 +78,35 @@
         <hr>
         <!-- Code Panel Block start -->
         <div class="panel panel-default">
-          <div class="panel-heading"><b>Select Statement</b></div>
+          <div class="panel-heading"><b>Joins</b></div>
           <div class="panel-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            <p>A JOIN clause is used to combine rows from two or more tables, based on a related column between them.</p>
             <div class="well">
-              SELECT * FROM mydb.profession;
+              Select my_contacts.last_name, first_name, email, interests.interest
+				From my_contacts
+				Join contact_interest on my_contacts.contact_id = contact_interest.contact_id
+				Join interests on contact_interest.interest_id = interests.interest_id
+				Order by my_contacts.last_name;
+
             </div>
             <div class="well">
-              SELECT * FROM mydb.my_contacts;
+              Select count(status) as ‘total married’ from my_contacts
+				Join status on my_contacts.status_id = status.status
+				Where status = ‘married’;
+
             </div>
             <div class="well">
-              SELECT * FROM mydb.status;
+              select my_contacts.last_name, first_name, email, status.status, seeking.seeking from my_contacts
+				join status on status.status_id = my_contacts.status_id
+				join contact_interest on my_contacts.contact_id = contact_interest.contact_id
+				join interests on interests.interest_id = contact_interest.interest_id
+				join contact_seeking on my_contacts.contact_id = contact_seeking.contact_id
+				where interests.interest = ‘fishing’
+				order by my_contacts.last_name;
+
             </div>
           </div>
         </div>
         <!-- Code Panel Block end -->
-    </div>
-  </div>
-</div>
+
+       
