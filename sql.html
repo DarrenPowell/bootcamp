@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>About</title>
+  <title>Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/introprograms/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/introprograms/css/style.css">
+  <link rel="stylesheet" href="/bootcamp/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/bootcamp/css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    /* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
     }
-    
+
     /* Add a gray background color and some padding to  footer */
     footer {
       background-color: #f2f2f2;
@@ -22,52 +23,187 @@
     }
   </style>
 </head>
-<body>
- 
 
-<nav class="navbar navbar-inverse">
-  
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="/">#</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="/">Home</a></li>
-        <li><a href="/introprograms/#darren">About Me</a></li>
-        
-        <li><a href="/introprograms/#git">Java</a></li>
-        <li><a href="/introprograms/#git">SQL</a></li>
-        
-      </ul>
-      <!-- <ul class="nav navbar-nav navbar-right">
+<body>
+
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/bootcamp/">Home</a></li>
+
+
+          <li><a href="/bootcamp/java.html">Java</a></li>
+          <li><a href="/bootcamp/sql.html">SQL</a></li>
+          <li><a href="/bootcamp/java2.html">Java2</a></li>
+          <li><a href="/bootcamp/certificates.html">Certificates</a></li>
+
+        </ul>
+        <!-- <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul> -->
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid main-image">
+
+  </div>
+  <div class="jumbotron custom-jumbotron" id="darren">
+    <div class="container text-center">
+      <h1>SQL</h1>
+      <p>A brief display of work I have been busy with . . . .</p>
+      <p>Have a look at my <a href="https://github.com/DarrenPowell" target="_blank">repo</a></p>
     </div>
   </div>
-</nav>
 
-<h2 style = "font-size: 180%;
-             word-spacing: 2px;
-             text-align: center;
-             margin-bottom: 30px;
-             letter-spacing: 1px">SQL</h2>
-<p style = "margin: 100px;">
+  <div class="container-fluid bg-3 text-center">
 
-  SQL - Structured Query Language is a domain-specific language used in programming and is designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS). It is particularly useful in handling structured data where there are relations between different entities/variables of the data.
+    <div class="row">
+      <div class="col-sm-12">
+        <hr id="work">
+        <h3>What is SQL?</h3>
+        <hr>
 
-<br>
-<br>
-<br>
+        <p style="text-align: justify;">
+
+          SQL - Structured Query Language is a domain-specific language used in programming and is designed for managing
+          data held in a relational database management system (RDBMS), or for stream processing in a relational data
+          stream management system (RDSMS). It is particularly useful in handling structured data where there are
+          relations between different entities/variables of the data.
+
+          <br>
+          <br>
+          <br>
+          <div class="container-fluid">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                  <h1>How I used MySql</h1>
+                  <hr>
+                  <div class="panel panel-default">
+                    <div class="panel-heading"><b>Select Statement</b></div>
+                    <div class="panel-body">
+                      <p>The SELECT statement is used to select data from a database. The data returned is stored in a
+                        result table, called the result-set.
+                      </p>
+                      <div class="well">
+                        SELECT * <br />
+                        FROM mydb.profession <br />
+                        WHERE profession = 'Manager';<br />
+                      </div>
+                      <div class="well">
+                        SELECT prof_id AS ID <br />
+                        FROM mydb.profession <br />
+                        WHERE profession = 'Manager' AND prof_id = 6;
+                      </div>
+                    </div>
+                  </div>
+
+                  <hr>
+                  <!-- Code Panel Block start -->
+                  <div class="panel panel-default">
+                    <div class="panel-heading"><b>Joins</b></div>
+                    <div class="panel-body">
+                      <p>A JOIN clause is used to combine rows from two or more tables, based on a related column
+                        between them.</p>
+                      <div class="well">
+                        Select my_contacts.last_name, first_name, email, interests.interest
+                        From my_contacts
+                        Join contact_interest on my_contacts.contact_id = contact_interest.contact_id
+                        Join interests on contact_interest.interest_id = interests.interest_id
+                        Order by my_contacts.last_name;
+
+                      </div>
+                      <div class="well">
+                        Select count(status) as ‘total married’ from my_contacts
+                        Join status on my_contacts.status_id = status.status
+                        Where status = ‘married’;
+
+                      </div>
+                      <div class="well">
+                        select my_contacts.last_name, first_name, email, status.status, seeking.seeking from my_contacts
+                        join status on status.status_id = my_contacts.status_id
+                        join contact_interest on my_contacts.contact_id = contact_interest.contact_id
+                        join interests on interests.interest_id = contact_interest.interest_id
+                        join contact_seeking on my_contacts.contact_id = contact_seeking.contact_id
+                        where interests.interest = ‘fishing’
+                        order by my_contacts.last_name;
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container-fluid bg-3 text-center">
+
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <hr id="work">
+                      <h3>Some of my Work</h3>
+                      <hr>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h3 class="panel-title">My SQL DataBase</h3>
+                        </div>
+                        <div class="panel-body">
+                          <img src="/bootcamp/img/mydb.png" class="img-responsive" style="width:100%" alt="Image">
+                          <hr>
+                          <p>A SQL project working with UML diagrams, various queries and Foreign Key Checks.</p>
+
+                          <a target="_blank" class="btn btn-md btn-primary"
+                            href="https://github.com/DarrenPowell/mySql_database">VIEW</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h3 class="panel-title">UML Diagram</h3>
+                        </div>
+                        <div class="panel-body">
+                          <img src="/bootcamp/img/UML.png" class="img-responsive" style="width:100%" alt="Image">
+                          <hr>
+                          <p>Creating a UML Diagram to link primary and foreign keys</p>
+
+                          <a target="_blank" class="btn btn-md btn-primary"
+                            href="https://github.com/DarrenPowell/mySql_database">VIEW</a>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </p>
+      </div>
+    </div>
+  </div>
 
 
 
-<br>
-<br>
-<br>
-</p>
+
+                <footer class="container-fluid text-center">
+                  <p>Darren Powell © 2019 </p>
+                </footer>
+
+</body>
+
+</html>
