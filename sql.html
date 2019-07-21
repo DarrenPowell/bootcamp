@@ -2,96 +2,92 @@
 <html lang="en">
 
 <head>
-  <title>Portfolio</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/bootcamp/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/bootcamp/css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="a display of java work I have done.">
 
-    /* Add a gray background color and some padding to  footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+  <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+  <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+
+  <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+  <!-- add this vvvvv  to all your pages so you have access to the bootstrap col-md-* -->
+  <link rel="stylesheet" type="text/css" href="vendors/css/bootstrap.min.css"> 
+  <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+  <title>Darren Powell</title>
+
+  <meta name="theme-color" content="#ffffff">
+
 </head>
 
 <body>
 
+    <nav class="sticky">
+        <div class="row">
+            <a href="index.html">
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+                <img src="resources/img/tri.png" alt=" logo" class="logo-black">
+            </a>
+            <ul class="main-nav js--main-nav">
+                <li><a href="java.html">Java</a></li>
+                <li><a href="sql.html">SQL</a></li>
+                <li class="active"><a href="java2.html">Java 2</a></li>
+                <li><a href="angular.html">Angular</a></li>
+                <li><a href="spring.html">Spring-Core 5</a></li>
+                <li><a href="jhipster.html">Jhipster</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+            </ul>
+            <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+        </div>
+    </nav>
 
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/"></a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="/bootcamp/">Home</a></li>
+
+    <div class="controls">
+
+        <br>
+        <br>
 
 
-          <li><a href="/bootcamp/java.html">Java</a></li>
-          <li class="active"><a href="/bootcamp/sql.html">SQL</a></li>
-          <li><a href="/bootcamp/java2.html">Java2</a></li>
-          <li><a href="/bootcamp/angular.html">Angular</a></li>
-          <li><a href="/bootcamp/certificates.html">Certificates</a></li>
+        <div><button onclick="toggleShape()">CLICK ME</button></div>
 
-        </ul>
-        <!-- <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul> -->
-      </div>
     </div>
-  </nav>
 
-  <div class="container-fluid main-image">
 
-  </div>
-  <div class="jumbotron custom-jumbotron" id="darren">
-    <div class="container text-center">
-      <h1>SQL</h1>
-      <p>A brief display of work I have been busy with . . . .</p>
-      <p>Have a look at my <a href="https://github.com/DarrenPowell" target="_blank">repo</a></p>
+
+
+
+
+
+    <div id="container">
+        <div id="stage">
+            <div id="shape" class="cube backfaces">
+                <div class="plane one">S</div>
+                <div class="plane two">Q</div>
+                <div class="plane three">L</div>
+                <div class="plane four">S</div>
+                <div class="plane five">Q</div>
+                <div class="plane six">L</div>
+                <div class="plane seven">S</div>
+                <div class="plane eight">Q</div>
+                <div class="plane nine">L</div>
+                <div class="plane ten">S</div>
+                <div class="plane eleven">Q</div>
+                <div class="plane twelve">L</div>
+            </div>
+        </div>
     </div>
-  </div>
 
-  <div class="container-fluid bg-3 text-center">
 
-    <div class="row">
-      <div class="col-sm-12">
-        <hr id="work">
-        <h3>What is SQL?</h3>
-        <hr>
 
-        <p style="text-align: justify;">
 
-          SQL - Structured Query Language is a domain-specific language used in programming and is designed for managing
-          data held in a relational database management system (RDBMS), or for stream processing in a relational data
-          stream management system (RDSMS). It is particularly useful in handling structured data where there are
-          relations between different entities/variables of the data.
-
-          <br>
-          <br>
-          <br>
-          <div class="container-fluid">
             <div class="container">
-              <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                  <h1>How I used MySql</h1>
-                  <hr>
+                
+
+              
+                  
+                  
                   <div class="panel panel-default">
                     <div class="panel-heading"><b>Select Statement</b></div>
                     <div class="panel-body">
@@ -189,21 +185,134 @@
                     </div>
 
                   </div>
-                </div>
-              </div>
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <hr>
+
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+
+                    <a href="resources/pdf/Darren.pdf"><li>Download Resumè</li></a>
+                    <br>
+                    <br>
+
+
+                    <li>Darren Powell</li>
+                    <br>
+                    <br>
+                    <li>Cell: 071 892 6232</li>
+                    <br>
+                    <br>
+                    <li>Email: darren.dev416@gmail.com</li>
+                    
+
+                </ul>
             </div>
-          </div>
-        </p>
-      </div>
-    </div>
-  </div>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com/darren.powell.96"><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="https://github.com/DarrenPowell"><i class="ion-social-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/darren-powell-00b7aa185/"><i class="ion-social-linkedin"></i></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                Copyright &copy; 2019 Darren Powell
+            </p>
 
 
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+
+    <script type="text/javascript" charset="utf-8">
+        function hasClassName(inElement, inClassName) {
+            var regExp = new RegExp('(?:^|\\s+)' + inClassName + '(?:\\s+|$)');
+            return regExp.test(inElement.className);
+        }
+
+        function addClassName(inElement, inClassName) {
+            if (!hasClassName(inElement, inClassName))
+                inElement.className = [inElement.className, inClassName].join(' ');
+        }
+
+        function removeClassName(inElement, inClassName) {
+            if (hasClassName(inElement, inClassName)) {
+                var regExp = new RegExp('(?:^|\\s+)' + inClassName + '(?:\\s+|$)', 'g');
+                var curClasses = inElement.className;
+                inElement.className = curClasses.replace(regExp, ' ');
+            }
+        }
+
+        function toggleClassName(inElement, inClassName) {
+            if (hasClassName(inElement, inClassName))
+                removeClassName(inElement, inClassName);
+            else
+                addClassName(inElement, inClassName);
+        }
+
+        function toggleShape() {
+            var shape = document.getElementById('shape');
+            if (hasClassName(shape, 'ring')) {
+                removeClassName(shape, 'ring');
+                addClassName(shape, 'cube');
+            } else {
+                removeClassName(shape, 'cube');
+                addClassName(shape, 'ring');
+            }
+
+            // Move the ring back in Z so it's not so in-your-face.
+            var stage = document.getElementById('stage');
+            if (hasClassName(shape, 'ring'))
+                stage.style.webkitTransform = 'translateZ(-200px)';
+            else
+                stage.style.webkitTransform = '';
+        }
+
+        function toggleBackfaces() {
+            var backfacesVisible = document.getElementById('backfaces').checked;
+            var shape = document.getElementById('shape');
+            if (backfacesVisible)
+                addClassName(shape, 'backfaces');
+            else
+                removeClassName(shape, 'backfaces');
+        }
+    </script>
 
 
-                <footer class="container-fluid text-center">
-                  <p>Darren Powell © 2019 </p>
-                </footer>
 
 </body>
 
