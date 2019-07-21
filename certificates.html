@@ -1,82 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Portfolio</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/bootcamp/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/bootcamp/css/style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Add a gray background color and some padding to  footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="a display of java work I have done.">
+
+  <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+  <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+  <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+
+  <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+  <!-- add this vvvvv  to all your pages so you have access to the bootstrap col-md-* -->
+  <link rel="stylesheet" type="text/css" href="vendors/css/bootstrap.min.css"> 
+  <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+  <title>Darren Powell</title>
+
+  <meta name="theme-color" content="#ffffff">
+
 </head>
+
 <body>
- 
-
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="/"></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="/bootcamp/">Home</a></li>
-        
-        
-        <li><a href="/bootcamp/java.html">Java</a></li>
-        <li><a href="/bootcamp/sql.html">SQL</a></li>
-        <li><a href="/bootcamp/java2.html">Java2</a></li>
-        <li><a href="/bootcamp/angular.html">Angular</a></li>
-        <li class="active"><a href="/bootcamp/certificates.html">Certificates</a></li>
-        
-      </ul>
-      <!-- <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul> -->
-    </div>
-  </div>
-</nav>
-
-<div class="container-fluid main-image">
     
-</div>  
-<div class="jumbotron custom-jumbotron" id="darren">
-  <div class="container text-center">
-    <h1>Certificates</h1>      
-    <p>A display of my hunger for knowledge and what I have achieved!</p>
-    <p>Have a look at my certifiction </p>
-  </div>
-</div>
-  
-<div class="container-fluid bg-3 text-center">  
+        <nav class="sticky">
+            <div class="row">
+                <a href="index.html">
 
-  <div class="row">
-    <div class="col-sm-12">
-      
+                    <img src="resources/img/tri.png" alt="Omnifood logo" class="logo-black">
+                </a>
+                <ul class="main-nav js--main-nav">
+                    <li><a href="java.html">Java</a></li>
+                    <li><a href="sql.html">SQL</a></li>
+                    <li><a href="java2.html">Java 2</a></li>
+                    <li><a href="angular.html">Angular</a></li>
+                    <li><a href="spring.html">Spring-Core 5</a></li>
+                    <li><a href="jhipster.html">Jhipster</a></li>
+                    <li><a href="certificates.html">Certificates</a></li>
+                </ul>
+                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+            </div>
+        </nav>
 
-     
-    </div>
-  </div> 
-  
-  <div class="row">
+
+
+
+        <div class="row">
     <div class="col-sm-12">
       <hr id="work">
       <h3>My Certificates</h3>
@@ -92,7 +62,7 @@
         <div class="panel-body">
           <img src="/bootcamp/img/oca.png" class="img-responsive" style="width:100%" alt="Image">
           <hr>
-          <p>Competency in Java 8</p>
+          <p>Competency in Java OCA</p>
           
           
         </div>
@@ -120,7 +90,7 @@
         <div class="panel-body">
           <img src="/bootcamp/img/JS.png" class="img-responsive" style="width:100%" alt="Image">
           <hr>
-          <p>Online course on understanding Javascript</p>
+          <p>Udemy- Understanding the weird parts. Javascript</p>
           
          
         </div>
@@ -136,7 +106,7 @@
         <div class="panel-body">
           <img src="/bootcamp/img/oraclesql.png" class="img-responsive" style="width:100%" alt="Image">
           <hr>
-          <p>Using Oracle Sql</p>
+          <p>Oracle Sql certification</p>
           
           
         </div>
@@ -159,14 +129,58 @@
     
   </div>
 </div>
+    
+
+    <hr>
+
+    <footer>
+        <div class="row">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+
+                     <a href="resources/pdf/Darren.pdf"><li>Download Resumè</li></a>
+                    <br>
+                    <br>
 
 
+                    <li>Darren Powell</li>
+                    <br>
+                    <br>
+                    <li>Cell: 071 892 6232</li>
+                    <br>
+                    <br>
+                    <li>Email: darren.dev416@gmail.com</li>
+                    
+
+                </ul>
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="https://www.facebook.com/darren.powell.96"><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="https://github.com/DarrenPowell"><i class="ion-social-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/darren-powell-00b7aa185/"><i
+                                class="ion-social-linkedin"></i></a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                Copyright &copy; 2019 Darren Powell
+            </p>
+
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
 
 
-
-<footer class="container-fluid text-center">
-  <p>Darren Powell © 2019 </p>
-</footer>
 
 </body>
+
 </html>
